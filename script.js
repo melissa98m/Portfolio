@@ -48,7 +48,7 @@
 			btn.style.display = "none";
 		}
 	};
-	document.getElementById('contactForm').addEventListener('submit', function(event) {
+	/*document.getElementById('contactForm').addEventListener('submit', function(event) {
 		event.preventDefault(); // Empêche la soumission par défaut du formulaire
 
 		// Vérifie les champs du formulaire
@@ -70,6 +70,7 @@
 			document.getElementById('message').value = '';
 		}
 	});
+	*/
  // creation des ball
 	document.addEventListener('DOMContentLoaded', function() {
 		const container = document.getElementById('cont2');
