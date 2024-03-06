@@ -1,0 +1,197 @@
+/* Votre CSS existant */
+
+body {
+    background-color: #f8f9fa; /* Thème léger : #f8f9fa, Thème sombre : #343a40 */
+    color: #333; /* Couleur du texte principale */
+    padding-top: 56px; /* Pour compenser la hauteur de la barre de navigation Bootstrap */
+}
+
+header {
+    background-color: #343a40; /* Thème léger : #343a40, Thème sombre : #212529 */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+section {
+    padding: 40px 0;
+}
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.section-slide-left {
+    animation: slideInFromLeft 2s ease-out;
+}
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.section-slide-right {
+    animation: slideInFromRight 2s ease-out;
+}
+
+h2 {
+    color: #343a40;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+.project-slide {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.project-slide img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #343a40; /* Thème léger : #343a40, Thème sombre : #212529 */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+#presentation{
+    font-family: 'Roboto Mono', monospace;
+}
+
+.typewriter{
+    font-family: 'Roboto Mono', monospace;
+    overflow: hidden; /* Pour créer l'effet de défilement du texte */
+    border-right: .15em solid #333; /* Animation du curseur */
+    white-space: nowrap; /* Empêche le texte de passer à la ligne */
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
+            typing 5s steps(20, end),
+            blink-caret .75s step-end infinite;
+}
+.reseau a{
+    text-decoration: none;
+    color: white;
+}
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/* Animation pour les champs de formulaire */
+.form-group input,
+.form-group textarea {
+    transition: border-color 0.3s ease;
+}
+
+.img-moi{
+    border-radius:15px;
+    max-width: 250px;
+    max-height:90%;
+
+}
+#profil .container{
+    background-color: #fff;
+    border-radius:20px;
+    padding-top:15px;
+    filter: drop-shadow(20px 10px 5px #6c757d);
+}
+
+.animated-list li {
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+    transform: translateY(-30px);
+}
+
+.animated-list li:nth-child(1) { transition-delay: 0.2s; }
+.animated-list li:nth-child(2) { transition-delay: 0.4s; }
+.animated-list li:nth-child(3) { transition-delay: 0.6s; }
+.animated-list li:nth-child(4) { transition-delay: 0.8s; }
+.animated-list li:nth-child(5) { transition-delay: 1s; }
+.animated-list li:nth-child(6) { transition-delay: 1.2s; }
+.animated-list li:nth-child(7) { transition-delay: 1.4s; }
+.animated-list li:nth-child(8) { transition-delay: 1.6s; }
+.animated-list li:nth-child(9) { transition-delay: 1.8s; }
+.animated-list li:nth-child(10) { transition-delay: 2s; }
+
+.animated-list li.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animation pour le message de confirmation */
+#confirmation {
+    animation: fadeOut 4s forwards;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #333;
+    }
+}
+.slick-prev::before, .slick-next::before{
+    color: dimgray;
+}
+@media (max-width: 768px) {
+    .slick-prev , .slick-next {
+        display: none !important;
+    }
+}
+@media (min-width: 1200px) {
+    #cont2 {
+        width: 100%;
+        height: 30vh;
+        position: relative;
+        overflow: hidden;
+    }
+    .ball {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #f8f9fa;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+    }
+}
