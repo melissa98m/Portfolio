@@ -27,6 +27,9 @@ header {
   text-align: center;
 }
 
+.logo-nav{
+    width: 50px;
+}
 li > i {
   font-size: 28px;
 }
