@@ -66,6 +66,9 @@ section {
 .section-slide-right {
   animation: slideInFromRight 2s ease-out;
 }
+.img-weather{
+  height: 50%;
+}
 
 h2 {
   color: #343a40;
